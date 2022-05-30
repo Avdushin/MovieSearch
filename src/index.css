@@ -8,8 +8,6 @@ body {
   color: aliceblue;
   font-family: 'Fira Sans', sans-serif;
 }
-
-
 .container {
   text-align: center;
   padding: 200px 0;
@@ -19,7 +17,7 @@ body {
   text-align: center;
 }
 .input-text input {
-  width: 300px;
+  width: 600px;
   height: 30px;
   outline: navajowhite;
   font-size: 18px;
@@ -34,12 +32,13 @@ body {
   font-weight: 700;
   width: 40%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 .moveres-item {
   border-radius: 30px;
   background: rgb(61, 59, 59, .6);
-  padding: 20px;
+  padding: 20px 20px;
+  height: auto;
 }
 .move-item {
   text-decoration: none;
@@ -48,6 +47,15 @@ body {
 .propz {
   color: #cdcdcd;
 }
+@media screen and (max-width: 1170px) {
+  .moveres {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 630px) {
   .moveres {
     padding-top: 20px;
@@ -55,7 +63,9 @@ body {
     font-weight: 700;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
+  }
+  .moveres-item {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 554px) {
@@ -63,12 +73,11 @@ body {
     padding-top: 20px;
     font-size: 20px;
     font-weight: 700;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    text-align: center;
   }
   .input-text input {
-    width: 100%;
+    width: 90%;
     height: 30px;
     outline: navajowhite;
     font-size: 18px;
@@ -78,14 +87,24 @@ body {
 @media screen and (max-width: 430px) {
   .moveres {
     padding-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
   .input-text {
     padding: 20px;
+  }
+  .input-text input {
+    width: 90%;
+  }
+  .move-item {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .propz {
+    font-weight: bold;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 300px) {
@@ -95,7 +114,6 @@ body {
     font-weight: 700;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
   .input-text {
     margin: 0 auto;
@@ -111,6 +129,10 @@ body {
   }
   .move-item {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 11.5px;
+  }
+  .propz {
+    font-weight: bold;
+    font-size: 14px;
   }
 }

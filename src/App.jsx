@@ -31,22 +31,17 @@ function App() {
     return () => clearTimeout(Debounce);
   }, [searchTerm]);
 
-
-
   return (
     <div className="container">
       <div className="live-search"><h1>MovieSerch</h1></div>
       <div className="input-text">
-        <input
-          autoFocus
+        <input className="search-input"
           type="text"
           placeholder="Search film"
           onChange={(e) => setSearchTerm(e.target.value)}
-          srtyle={{
-            width: '600px',
-          }}
         />
         <MoveList className="moveres" moveList={moveList} />
+        
       </div>
     </div>
   );
